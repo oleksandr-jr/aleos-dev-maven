@@ -64,7 +64,7 @@ This will start the program and display the menu, where you can choose the desir
 
 You can also use the  cipher machine JAR file with command-line arguments to perform various operations without entering the interactive mode. Here are the available commands:
 
-1. Encrypt a source file:
+1. #### Encrypt a source file:
 
 ```bash
 java -jar CipherMachine.jar encrypt pathToSourceFile key
@@ -73,7 +73,7 @@ java -jar CipherMachine.jar encrypt pathToSourceFile key
 java -jar CipherMachine.jar e pathToSourceFile key
 ```
 
-2. Decrypt an encrypted file:
+2. #### Decrypt an encrypted file:
 
 ```bash
 java -jar CipherMachine.jar decrypt pathToEncryptedFile key
@@ -82,7 +82,7 @@ java -jar CipherMachine.jar decrypt pathToEncryptedFile key
 java -jar CipherMachine.jar d pathToEncryptedFile key
 ```
 
-3. Brute force an encrypted file:
+3. #### Brute force an encrypted file:
 
 ```bash
 java -jar CipherMachine.jar bruteforce pathToEncryptedFile
@@ -91,7 +91,7 @@ java -jar CipherMachine.jar bruteforce pathToEncryptedFile
 java -jar CipherMachine.jar bf pathToEncryptedFile
 ```
 
-4. Perform statistical analysis on an encrypted file using a reference file:
+4. #### Perform statistical analysis on an encrypted file using a reference file:
 
 ```bash
 java -jar CipherMachine.jar statisticalanalysis pathToEncryptedFile pathToReferenceFile
