@@ -3,7 +3,7 @@ CipherMachine is a Java-based application that provides cryptographic analysis a
 
 ## Table of Contents
 - [Overview](#overview)
-- [How to Use JAR File](#How to Use JAR File)
+- [How to Use JAR File](#how-to-use-jar-file)
 - [Usage](#usage)
   - [Encrypting](#encrypting)
   - [Decrypting](#decrypting)
