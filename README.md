@@ -68,6 +68,8 @@ You can also use the  cipher machine JAR file with command-line arguments to per
 
 ```bash
 java -jar CipherMachine.jar encrypt pathToSourceFile key
+```
+```bash
 java -jar CipherMachine.jar e pathToSourceFile key
 ```
 
@@ -75,6 +77,8 @@ java -jar CipherMachine.jar e pathToSourceFile key
 
 ```bash
 java -jar CipherMachine.jar decrypt pathToEncryptedFile key
+```
+```bash
 java -jar CipherMachine.jar d pathToEncryptedFile key
 ```
 
@@ -82,6 +86,8 @@ java -jar CipherMachine.jar d pathToEncryptedFile key
 
 ```bash
 java -jar CipherMachine.jar bruteforce pathToEncryptedFile
+```
+```bash
 java -jar CipherMachine.jar bf pathToEncryptedFile
 ```
 
@@ -89,6 +95,8 @@ java -jar CipherMachine.jar bf pathToEncryptedFile
 
 ```bash
 java -jar CipherMachine.jar statisticalanalysis pathToEncryptedFile pathToReferenceFile
+```
+```bash
 java -jar CipherMachine.jar sa pathToEncryptedFile pathToReferenceFile
 ```
 
