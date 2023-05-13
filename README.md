@@ -102,25 +102,36 @@ java -jar CipherMachine.jar
 
 make sure your terminal or command prompt window is set to a minimum width of 110 characters for correct visualization.
 
-To start the interactive console, run the JAR file as explained in the "How to Use JAR File" section. The console will provide a user-friendly menu to guide you through the available options, such as encrypting, decrypting, or analyzing a text file using the Caesar cipher. You can provide the necessary information like file paths and encryption keys by following the on-screen prompts.
+![Menu](https://github.com/aleos-dev/CipherMachine/blob/main/resources/png/menu.png)
+
+The console will provide a user-friendly menu to guide you through the available options, such as encrypting, decrypting, or analyzing a text file using the Caesar cipher. You can provide the necessary information like file paths and encryption keys by following the on-screen prompts.
 
 ### Encrypting
-
+![Prompted to enter the file path](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/encryptPath.png)
+![Prompted to enter the encryption key](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/encryptKey.png)
+![Encryption is complete](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/encryptDone.png)
 
 ### Decrypting
-
+![Prompted to enter the path to the encrypted file](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/decryptPath.png)
+![Prompted to enter the decryption key](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/dectyptKey.png)
+![Decryption is complete](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/decryptDone.png)
 
 ### Brute Force
-
+![Prompted to enter the path to the encrypted file](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/bruteForcePath.png)
+![BruteForce is complete](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/bruteForceDone.png)
 
 ### Statistical Analysis
-
+![Prompted to enter the path to the encrypted file](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/statAnPath.png)
+![Prompted to enter the path to the reference file](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/statAnRefPath.png)
+![Brute Force via statistical analysis is complete](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/statAnDone.png)
 
 ### Navigation
 
 Use "N" or "P" command to navigate through the file content.
 
-
+![navNext](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/navNext.png)
+![navPrev](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/navPrev.png)
+![navDone](https://github.com/aleos-dev/CipherMachine/blob/33d0f90103682b5db61973949ec5176ea8449051/resources/png/navDone.png)
 
 ## Contributing
 
