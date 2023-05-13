@@ -35,11 +35,11 @@ public class SearchTheKeyHandler implements StateHandler {
         if (rootState == BRUTE_FORCE) {
 
             caesarCipher.bruteForce(cipherMachine.getFileText());
-        } else if (rootState == STATICAL_ANALYSIS) {
+        } else if (rootState == STATISTICAL_ANALYSIS) {
 
             caesarCipher.bruteForceViaStatisticalAnalysis(cipherMachine.getFileText(), cipherMachine.getReferenceFileText());
 
-            consoleManager.clearMenu(ModeHeaderPrompt.STATICAL_ANALYSIS.getMessage());
+            consoleManager.clearMenu(ModeHeaderPrompt.STATISTICAL_ANALYSIS.getMessage());
             consoleManager.updateMenu(caesarCipher.getMostFrequentCharacterStatistics());
         }
 

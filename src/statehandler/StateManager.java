@@ -113,7 +113,7 @@ public class StateManager {
             case "1", "e", "encrypt" -> ENCRYPT;
             case "2", "d", "decrypt" -> DECRYPT;
             case "3", "bf", "brute force", "bruteforce" -> BRUTE_FORCE;
-            case "4", "sa", "statistical analysis", "statisticalanalysis" -> STATICAL_ANALYSIS;
+            case "4", "sa", "statistical analysis", "statisticalanalysis" -> STATISTICAL_ANALYSIS;
             case "q", "exit" -> OFF;
 
             default -> UNSUPPORTED_STATE;

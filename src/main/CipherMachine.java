@@ -217,7 +217,7 @@ public class CipherMachine {
         stateHandlers.put(ENCRYPT, new EncryptionHandler(this));
         stateHandlers.put(DECRYPT, new DecryptionHandler(this));
         stateHandlers.put(BRUTE_FORCE, new BruteForceHandler(this));
-        stateHandlers.put(STATICAL_ANALYSIS, new StaticalAnalysisHandler(this));
+        stateHandlers.put(STATISTICAL_ANALYSIS, new StaticalAnalysisHandler(this));
         stateHandlers.put(GET_FILE, new ReadFileHandler(this));
         stateHandlers.put(GET_ENCRYPTED_FILE, new ReadFileHandler(this));
         stateHandlers.put(GET_REFERENCE_FILE, new ReadFileHandler(this));

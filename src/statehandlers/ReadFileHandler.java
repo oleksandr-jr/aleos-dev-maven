@@ -77,7 +77,7 @@ public class ReadFileHandler implements StateHandler {
             stateManager.setCurrent(GET_THE_KEY);
         } else if (rootState == BRUTE_FORCE) {
             stateManager.setCurrent(SEARCH_THE_KEY);
-        } else if (rootState == STATICAL_ANALYSIS) {
+        } else if (rootState == STATISTICAL_ANALYSIS) {
             if (currentState == GET_ENCRYPTED_FILE) {
                 stateManager.setCurrent(GET_REFERENCE_FILE);
             } else {
