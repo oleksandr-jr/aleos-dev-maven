@@ -43,7 +43,7 @@ public class EnterKeyHandler implements StateHandler {
             consoleManager.updateMenu(String.format(OperationPrompt.FILE_IS_DECRYPTED.getMessage(), key));
         }
 
-        caesarCipher.setKey(key);
+        caesarCipher.setKey(Math.abs(key));
 
         stateManager.setCurrent(CIPHER_PROCESS);
     }
