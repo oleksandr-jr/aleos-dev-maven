@@ -112,8 +112,8 @@ public class StateManager {
             case "n", "p" -> SCROLL_PREVIEW_PAGE;
             case "1", "e", "encrypt" -> ENCRYPT;
             case "2", "d", "decrypt" -> DECRYPT;
-            case "3", "bf", "brute force", "bruteforce" -> BRUTE_FORCE;
-            case "4", "sa", "statistical analysis", "statisticalanalysis" -> STATISTICAL_ANALYSIS;
+            case "3", "b", "bf", "brute force", "bruteforce" -> BRUTE_FORCE;
+            case "4", "s", "sa", "statistical analysis", "statisticalanalysis" -> STATISTICAL_ANALYSIS;
             case "q", "exit" -> OFF;
 
             default -> UNSUPPORTED_STATE;
