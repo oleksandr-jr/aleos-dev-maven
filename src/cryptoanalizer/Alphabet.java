@@ -8,6 +8,7 @@ import java.util.*;
 public enum Alphabet {
     ENGLISH("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,\":-!?" + " "),
     RUSSIAN("абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ.,\":-!?" + " "),
+    UKRAINIAN("абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ.,\":-!?" + " "),
     WHO_KNOWS("");
 
     private final String values;
@@ -37,22 +38,27 @@ public enum Alphabet {
 
             int matchingChars = 0;
             int charactersCount = 0;
+
             for (var ch : sampleText.toCharArray()) {
                 if (Character.isAlphabetic(ch)) {
                     charactersCount++;
-                    if (alphabet.indexOf(ch) > 0) {
+                    if (alphabet.indexOf(ch) >= 0) {
                         matchingChars++;
                     }
                 }
             }
 
             if (matchingChars > (charactersCount / 2)) {
+                if (alphabet == Alphabet.RUSSIAN && (sampleText.contains("і") || sampleText.contains("є"))) {
+                    return Alphabet.UKRAINIAN;
+                }
                 return alphabet;
             }
         }
 
         return WHO_KNOWS;
     }
+
 
     /**
      * Returns a copy of the top ten frequent characters for the alphabet.
