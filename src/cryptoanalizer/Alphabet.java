@@ -18,6 +18,7 @@ public enum Alphabet {
     static {
         initializeEnglishFrequencyData();
         initializeRussianFrequencyData();
+        initializeUkrainianFrequencyData();
     }
 
     Alphabet(String values) {
@@ -115,5 +116,20 @@ public enum Alphabet {
 
         RUSSIAN.charsFrequency.putAll(russian);
         Collections.addAll(RUSSIAN.topTenFrequentChars, 'с', 'е', 'н', 'о', 'в', 'а', 'л', 'и', 'т', 'р');
+    }
+
+    private static void initializeUkrainianFrequencyData() {
+        Map<Character, Double> ukrainian = new HashMap<>();
+
+        String ukrainianFrequencies = "а:7.6,б:1.7,в:5.5,г:1.6,ґ:0.6,д:3.3,е:1.1,є:0.7,ж:0.9,з:3.7,и:5.7,і:6.3,ї:1.1,й:1.4,к:3.5,л:3.9,м:3.1,н:7.2,о:9.6,п:3.4,р:4.5,с:4.6,т:5.6,у:3.9,ф:0.2,х:1.3,ц:0.9,ч:1.4,ш:1.8,щ:0.5,ь:1.8,ю:0.5,я:4.5";
+        ukrainian.put(' ', 14.5);
+
+        for (String entry : ukrainianFrequencies.split(",")) {
+            String[] keyValue = entry.split(":");
+            ukrainian.put(keyValue[0].charAt(0), Double.parseDouble(keyValue[1]));
+        }
+
+        UKRAINIAN.charsFrequency.putAll(ukrainian);
+        Collections.addAll(UKRAINIAN.topTenFrequentChars, 'о', 'а', 'н', 'і', 'е', 'и', 'т', 'р', 'с', 'в');
     }
 }
