@@ -1,15 +1,15 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import filehandler.FileService;
-import main.CipherMachine;
-import prompt.FilePrompt;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.filehandler.FileService;
+import org.example.CipherMachine;
+import org.example.prompt.FilePrompt;
+import org.example.statehandler.StateManager;
 
 import java.io.IOException;
 import java.nio.file.Path;
 
-import static statehandler.State.OPERATION_COMPLETE;
+import static org.example.statehandler.State.OPERATION_COMPLETE;
 
 public class SaveToFileHandler implements StateHandler {
 

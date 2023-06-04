@@ -1,7 +1,7 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import main.CipherMachine;
+import org.example.console.ConsoleManager;
+import org.example.CipherMachine;
 
 public class MenuStateHandler implements StateHandler {
     private final ConsoleManager consoleManager;

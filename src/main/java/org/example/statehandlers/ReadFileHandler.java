@@ -1,20 +1,20 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import cryptoanalizer.Alphabet;
-import cryptoanalizer.caesarcipher.CaesarCipher;
-import filehandler.FileService;
-import main.CipherMachine;
-import prompt.FilePrompt;
-import prompt.OperationPrompt;
-import statehandler.State;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.cryptoanalizer.Alphabet;
+import org.example.cryptoanalizer.caesarcipher.CaesarCipher;
+import org.example.filehandler.FileService;
+import org.example.CipherMachine;
+import org.example.prompt.FilePrompt;
+import org.example.prompt.OperationPrompt;
+import org.example.statehandler.State;
+import org.example.statehandler.StateManager;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static statehandler.State.*;
+import static org.example.statehandler.State.*;
 
 public class ReadFileHandler implements StateHandler {
     private final CipherMachine cipherMachine;

@@ -1,13 +1,13 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import prompt.ModeHeaderPrompt;
-import cryptoanalizer.caesarcipher.CaesarCipher;
-import main.CipherMachine;
-import statehandler.State;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.prompt.ModeHeaderPrompt;
+import org.example.cryptoanalizer.caesarcipher.CaesarCipher;
+import org.example.CipherMachine;
+import org.example.statehandler.State;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.*;
+import static org.example.statehandler.State.*;
 
 public class SearchTheKeyHandler implements StateHandler {
     private final CipherMachine cipherMachine;

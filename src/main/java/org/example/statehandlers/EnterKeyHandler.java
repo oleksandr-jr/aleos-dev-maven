@@ -1,12 +1,12 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import cryptoanalizer.caesarcipher.CaesarCipher;
-import main.CipherMachine;
-import prompt.OperationPrompt;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.cryptoanalizer.caesarcipher.CaesarCipher;
+import org.example.CipherMachine;
+import org.example.prompt.OperationPrompt;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.*;
+import static org.example.statehandler.State.*;
 
 public class EnterKeyHandler implements StateHandler {
     private final ConsoleManager consoleManager;

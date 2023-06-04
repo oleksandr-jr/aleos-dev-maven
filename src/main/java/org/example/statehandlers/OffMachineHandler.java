@@ -1,6 +1,6 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import main.CipherMachine;
+import org.example.CipherMachine;
 
 public class OffMachineHandler implements StateHandler {
 

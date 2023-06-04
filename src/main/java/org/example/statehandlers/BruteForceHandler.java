@@ -1,12 +1,12 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import main.CipherMachine;
-import prompt.ModeHeaderPrompt;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.CipherMachine;
+import org.example.prompt.ModeHeaderPrompt;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.BRUTE_FORCE;
-import static statehandler.State.GET_ENCRYPTED_FILE;
+import static org.example.statehandler.State.BRUTE_FORCE;
+import static org.example.statehandler.State.GET_ENCRYPTED_FILE;
 
 public class BruteForceHandler implements StateHandler {
     private final ConsoleManager consoleManager;

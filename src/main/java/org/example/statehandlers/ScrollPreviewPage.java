@@ -1,8 +1,8 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import main.CipherMachine;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.CipherMachine;
+import org.example.statehandler.StateManager;
 
 public class ScrollPreviewPage implements StateHandler {
     private final ConsoleManager consoleManager;

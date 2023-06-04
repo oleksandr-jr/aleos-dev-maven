@@ -1,10 +1,10 @@
-package main;
+package org.example;
 
-import console.ConsoleManager;
-import cryptoanalizer.caesarcipher.CaesarCipher;
-import statehandler.State;
-import statehandler.StateManager;
-import statehandlers.*;
+import org.example.console.ConsoleManager;
+import org.example.cryptoanalizer.caesarcipher.CaesarCipher;
+import org.example.statehandler.State;
+import org.example.statehandler.StateManager;
+import org.example.statehandlers.*;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
@@ -13,7 +13,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import static statehandler.State.*;
 
 /**
  * The main class representing the Cipher Machine application.
@@ -55,7 +54,7 @@ public class CipherMachine {
         try (Scanner scanner = getScanner(args)) {
             this.scanner = scanner;
 
-            while (stateManager.getCurrent() != OFF) {
+            while (stateManager.getCurrent() != State.OFF) {
                 consoleManager.updateMenu(stateManager.getPromptOfCurrentState());
                 consoleManager.drawScreen();
                 execute(getUserInput());
@@ -213,21 +212,21 @@ public class CipherMachine {
      * Initializes the state handlers for the Cipher Machine.
      */
     private void initializeStateHandlers() {
-        stateHandlers.put(MENU, new MenuStateHandler(this));
-        stateHandlers.put(ENCRYPT, new EncryptionHandler(this));
-        stateHandlers.put(DECRYPT, new DecryptionHandler(this));
-        stateHandlers.put(BRUTE_FORCE, new BruteForceHandler(this));
-        stateHandlers.put(STATISTICAL_ANALYSIS, new StaticalAnalysisHandler(this));
-        stateHandlers.put(GET_FILE, new ReadFileHandler(this));
-        stateHandlers.put(GET_ENCRYPTED_FILE, new ReadFileHandler(this));
-        stateHandlers.put(GET_REFERENCE_FILE, new ReadFileHandler(this));
-        stateHandlers.put(GET_THE_KEY, new EnterKeyHandler(this));
-        stateHandlers.put(SEARCH_THE_KEY, new SearchTheKeyHandler(this));
-        stateHandlers.put(CIPHER_PROCESS, new CipherProcessHandler(this));
-        stateHandlers.put(SAVE_TO_FILE_PROCESS, new SaveToFileHandler(this));
-        stateHandlers.put(SCROLL_PREVIEW_PAGE, new ScrollPreviewPage(this));
-        stateHandlers.put(OPERATION_COMPLETE, new OperationCompletionHandler(this));
-        stateHandlers.put(OFF, new OffMachineHandler(this));
+        stateHandlers.put(State.MENU, new MenuStateHandler(this));
+        stateHandlers.put(State.ENCRYPT, new EncryptionHandler(this));
+        stateHandlers.put(State.DECRYPT, new DecryptionHandler(this));
+        stateHandlers.put(State.BRUTE_FORCE, new BruteForceHandler(this));
+        stateHandlers.put(State.STATISTICAL_ANALYSIS, new StaticalAnalysisHandler(this));
+        stateHandlers.put(State.GET_FILE, new ReadFileHandler(this));
+        stateHandlers.put(State.GET_ENCRYPTED_FILE, new ReadFileHandler(this));
+        stateHandlers.put(State.GET_REFERENCE_FILE, new ReadFileHandler(this));
+        stateHandlers.put(State.GET_THE_KEY, new EnterKeyHandler(this));
+        stateHandlers.put(State.SEARCH_THE_KEY, new SearchTheKeyHandler(this));
+        stateHandlers.put(State.CIPHER_PROCESS, new CipherProcessHandler(this));
+        stateHandlers.put(State.SAVE_TO_FILE_PROCESS, new SaveToFileHandler(this));
+        stateHandlers.put(State.SCROLL_PREVIEW_PAGE, new ScrollPreviewPage(this));
+        stateHandlers.put(State.OPERATION_COMPLETE, new OperationCompletionHandler(this));
+        stateHandlers.put(State.OFF, new OffMachineHandler(this));
     }
 
     /**

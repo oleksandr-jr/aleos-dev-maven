@@ -1,14 +1,15 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import main.CipherMachine;
-import prompt.ModeHeaderPrompt;
-import statehandler.StateManager;
+import org.example.CipherMachine;
+import org.example.console.ConsoleManager;
+import org.example.prompt.ModeHeaderPrompt;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.ENCRYPT;
-import static statehandler.State.GET_FILE;
+import static org.example.statehandler.State.ENCRYPT;
+import static org.example.statehandler.State.GET_FILE;
 
-public class EncryptionHandler implements StateHandler {
+
+public class EncryptionHandler implements org.example.statehandlers.StateHandler {
     private final ConsoleManager consoleManager;
     private final StateManager stateManager;
 

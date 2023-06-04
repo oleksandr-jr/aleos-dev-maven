@@ -1,12 +1,12 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import main.CipherMachine;
-import prompt.ModeHeaderPrompt;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.CipherMachine;
+import org.example.prompt.ModeHeaderPrompt;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.GET_ENCRYPTED_FILE;
-import static statehandler.State.STATISTICAL_ANALYSIS;
+import static org.example.statehandler.State.GET_ENCRYPTED_FILE;
+import static org.example.statehandler.State.STATISTICAL_ANALYSIS;
 
 public class StaticalAnalysisHandler implements StateHandler {
 

@@ -1,15 +1,15 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import cryptoanalizer.caesarcipher.CaesarCipher;
-import main.CipherMachine;
-import statehandler.State;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.cryptoanalizer.caesarcipher.CaesarCipher;
+import org.example.CipherMachine;
+import org.example.statehandler.State;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.ENCRYPT;
-import static statehandler.State.SAVE_TO_FILE_PROCESS;
+import static org.example.statehandler.State.ENCRYPT;
+import static org.example.statehandler.State.SAVE_TO_FILE_PROCESS;
 
-public class CipherProcessHandler implements StateHandler {
+public class CipherProcessHandler implements org.example.statehandlers.StateHandler {
 
     private final CipherMachine cipherMachine;
     private final CaesarCipher caesarCipher;

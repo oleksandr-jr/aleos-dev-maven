@@ -1,10 +1,10 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import main.CipherMachine;
-import statehandler.StateManager;
+import org.example.CipherMachine;
+import org.example.statehandler.StateManager;
 
-import static statehandler.State.MENU;
-import static statehandler.State.OFF;
+import static org.example.statehandler.State.MENU;
+import static org.example.statehandler.State.OFF;
 
 public class OperationCompletionHandler implements StateHandler {
     private final StateManager stateManager;
