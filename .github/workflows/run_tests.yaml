@@ -32,5 +32,5 @@ jobs:
         if: always()
         uses: testhub-io/testhub-io.action@v0.62
         with:
-          test_result_pattern: "/target/surefire-reports/**/*.xml"
+          test_result_pattern: "target/surefire-reports/*.xml"
           test_coverage_pattern: "/target/site/jacoco/jacoco.xml"
