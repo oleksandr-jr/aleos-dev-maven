@@ -233,7 +233,7 @@ class MainTest {
 
         @DisplayName("[ENCRYPT] Simple letters encoding")
         @ParameterizedTest
-        @CsvSource({"А, 1, Г",
+        @CsvSource({"А, 1, Б",
                 "а, 1, б",
                 "А, 32, Я",
                 "а, 32, я",})
