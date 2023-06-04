@@ -34,7 +34,7 @@ jobs:
         uses: dorny/test-reporter@v1
         if: always()    # run this step even if previous step failed
         with:
-          name: Tests Report            # Name of the check run which will be created
+          name: Tests Report 2           # Name of the check run which will be created
           path: target/surefire-reports/*.xml    # Path to test results
           reporter: java-junit        # Format of test results
 
@@ -42,11 +42,11 @@ jobs:
         uses: mikepenz/action-junit-report@v3
         if: always() # always run even if the previous step fails
         with:
-          report_paths: '/target/surefire-reports/*.xml'
+          report_paths: 'target/surefire-reports/*.xml'
 
       - name: Upload test results to testhub.io
         if: always()
         uses: testhub-io/testhub-io.action@v0.62
         with:
-          test_result_pattern: "/target/surefire-reports/*.xml"
-          test_coverage_pattern: "/target/site/jacoco/jacoco.xml"
+          test_result_pattern: "target/surefire-reports/*.xml"
+          test_coverage_pattern: "target/site/jacoco/jacoco.xml"
