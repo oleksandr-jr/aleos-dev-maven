@@ -1,4 +1,4 @@
-package prompt;
+package org.example.prompt;
 
 public enum PreviewPrompt {
         INFO("""

@@ -1,4 +1,4 @@
-package cryptoanalizer;
+package org.example.cryptoanalizer;
 
 import java.util.*;
 

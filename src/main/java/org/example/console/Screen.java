@@ -1,4 +1,4 @@
-package console;
+package org.example.console;
 
 
 import java.util.Arrays;

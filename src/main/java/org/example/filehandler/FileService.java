@@ -1,4 +1,4 @@
-package filehandler;
+package org.example.filehandler;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

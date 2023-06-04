@@ -1,4 +1,4 @@
-package prompt;
+package org.example.prompt;
 
 public enum ModeHeaderPrompt {
     ENCRYPT_HEADER("___________________ENCRYPT MODE____________________\n"),

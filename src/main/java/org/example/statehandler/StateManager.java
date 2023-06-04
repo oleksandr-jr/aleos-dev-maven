@@ -1,6 +1,6 @@
-package statehandler;
+package org.example.statehandler;
 
-import static statehandler.State.*;
+import static org.example.statehandler.State.*;
 
 /**
  * Manages the state of the application and handles state transitions.

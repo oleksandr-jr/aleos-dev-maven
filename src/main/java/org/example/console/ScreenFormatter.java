@@ -1,4 +1,4 @@
-package console;
+package org.example.console;
 
 /**
  * The ScreenFormatter class is responsible for formatting the screen matrix by creating a frame around it.

@@ -1,7 +1,7 @@
-package statehandlers;
+package org.example.statehandlers;
 
-import console.ConsoleManager;
-import statehandler.StateManager;
+import org.example.console.ConsoleManager;
+import org.example.statehandler.StateManager;
 
 public class PreviousPreviewPageHandler implements StateHandler {
     private ConsoleManager consoleManager;

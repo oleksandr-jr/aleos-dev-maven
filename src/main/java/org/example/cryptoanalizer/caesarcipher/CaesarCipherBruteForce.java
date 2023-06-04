@@ -1,6 +1,6 @@
-package cryptoanalizer.caesarcipher;
+package org.example.cryptoanalizer.caesarcipher;
 
-import cryptoanalizer.Alphabet;
+import org.example.cryptoanalizer.Alphabet;
 
 import java.util.*;
 

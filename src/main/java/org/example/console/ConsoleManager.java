@@ -1,9 +1,9 @@
-package console;
+package org.example.console;
 
 
-import prompt.MenuPrompt;
-import prompt.OperationPrompt;
-import prompt.PreviewPrompt;
+import org.example.prompt.MenuPrompt;
+import org.example.prompt.OperationPrompt;
+import org.example.prompt.PreviewPrompt;
 
 import java.util.LinkedList;
 import java.util.Objects;

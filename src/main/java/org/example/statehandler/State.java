@@ -1,8 +1,8 @@
-package statehandler;
+package org.example.statehandler;
 
-import prompt.FilePrompt;
-import prompt.MenuPrompt;
-import prompt.OperationPrompt;
+import org.example.prompt.FilePrompt;
+import org.example.prompt.MenuPrompt;
+import org.example.prompt.OperationPrompt;
 
 /**
  * Represents the states of the application.
