@@ -29,7 +29,7 @@ jobs:
             target/surefire-reports/*.xml
           report_individual_runs: true
       - name: Upload test results
-        if: always(
+        if: always()
         uses: testhub-io/testhub-io.action@v0.62
         with:
           test_result_pattern: "/target/surefire-reports/**/*.xml"
