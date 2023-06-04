@@ -28,3 +28,5 @@ jobs:
           files: |
             target/surefire-reports/*.xml
           report_individual_runs: true
+      - name: Test results uploader to Test-hub.io
+        uses: testhub-io/testhub-io.action@v0.62
